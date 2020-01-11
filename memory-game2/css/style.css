@@ -60,6 +60,7 @@ a {
 
 a:hover {
   border-bottom: 2px solid white;
+  transition: .3s;
 }
 /* =============================
 HEADER
