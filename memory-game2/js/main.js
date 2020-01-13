@@ -1,5 +1,11 @@
 console.log("Up and running!");
-
+createBoard = function() {
+	for (let i = 0; i < cards.length; i++) {
+		console.log("You flipped " + cards[i].rank);
+	const cardElement = document.createElement('img');
+	cardElement.setAttribute('src','images/back.png');
+}
+}
 const cards = [
 {
 	rank: "queen",
@@ -37,11 +43,8 @@ flipCard = function(cardId) {
 	console.log("User flipped " + cards[cardId].rank);
 	console.log(cards[cardId].cardImage);
 	console.log(cards[cardId].suit);
-		cardsInPlay.push(cards[cardId].rank);
+	cardsInPlay.push(cards[cardId].rank);
 if (cardsInPlay.length === 2) {
 	checkForMatch();
 }
 }
-createBoard = function() {
-	for (let i = 0; i < cards.length; i++) {
-	}
