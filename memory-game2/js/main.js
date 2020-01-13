@@ -4,6 +4,7 @@ createBoard = function() {
 		console.log("You flipped " + cards[i].rank);
 	const cardElement = document.createElement('img');
 	cardElement.setAttribute('src','images/back.png');
+	cardElement.setAttribute('data-id', cards.cardImage[i]);
 }
 }
 const cards = [
